@@ -245,7 +245,7 @@ void fetchInformation()
 
     // Get application's title ID & full title
     appTitleId = malloc(sizeof(char) * 12);
-    sceAppMgrAppParamGetString(0, 12, appTitleId, 256);
+    sceAppMgrAppParamGetString(0, 12, appTitleId, 12);
     appTitle = malloc(sizeof(char) * 256);
     sceAppMgrAppParamGetString(0, 9, appTitle, 256);
 
